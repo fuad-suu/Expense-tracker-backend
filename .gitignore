@@ -1,0 +1,85 @@
+# ─── ASP.NET Core / .NET ──────────────────────────────────────────────────
+
+# Build output
+bin/
+obj/
+
+# Published output
+publish/
+out/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Roslyn cache
+.fusion/
+
+# ASP.NET scaffolding
+ScaffoldingReadMe.txt
+
+# ─── Sensitive config — NEVER commit these ────────────────────────────────
+
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
+
+# ─── Entity Framework ─────────────────────────────────────────────────────
+
+# Don't ignore migrations — commit those
+# !**/Migrations/
+
+# ─── Angular ──────────────────────────────────────────────────────────────
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.angular/
+
+# Environment files
+src/environments/environment.ts
+src/environments/environment.*.ts
+!src/environments/environment.example.ts
+
+# Angular cache
+.angular/cache/
+
+# ─── General ──────────────────────────────────────────────────────────────
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Test coverage
+coverage/
+TestResults/
+
+# Temp files
+*.tmp
+*.temp
+*.swp
+*~
