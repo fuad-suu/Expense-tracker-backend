@@ -38,8 +38,7 @@ public class AuthController : ControllerBase
         {
             Email = dto.Email.ToLower(),
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-            FirstName = dto.FirstName,
-            LastName = dto.LastName,
+            Username = dto.Username,
         };
 
         _db.Users.Add(user);
@@ -131,8 +130,7 @@ public class AuthController : ControllerBase
             {
                 Id = user.Id,
                 Email = user.Email,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
+                Username = user.Username,
             }
         };
     }
